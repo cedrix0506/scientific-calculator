@@ -20,9 +20,11 @@ power = number1 ** number2
 integer_division = number1 // number2
 modulus = number1 % number2
 
-#imprimir operaciones
+#encabezado de resultados
 print("\nResults:")
 print("=" * 30)
+
+#imprimir operaciones
 print(f" Addition of {number1} and {number2} is : {addition}")
 print(f" Subtraction of {number1} and {number2} is : {subtraction}")
 print(f" Multiplication of {number1} and {number2} is : {multiplication}")
