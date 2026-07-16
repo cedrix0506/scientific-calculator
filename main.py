@@ -7,6 +7,20 @@ print("=" * 30)
 name = input("Enter your name: ")
 print(f"Hello, {name}! Welcome to the calculator.")
 
+#Agregar un menu
+print("MENU")
+
+print("1. addition")
+print("2. subtraction")
+print("3. multiplication")
+print("4. division")
+print("5. power")
+print("6. integer division")
+print("7. modulus")
+
+#preguntar al usuario que operacion desea realizar
+operation = float(input("Enter the number of the operation: "))
+
 #preguntar 2 numeros
 number1 = float(input ("Enter the first number :"))
 number2 = float(input ("Enter the second number :"))
@@ -20,15 +34,40 @@ power = number1 ** number2
 integer_division = number1 // number2
 modulus = number1 % number2
 
+#realizar la operacion dependiendo de la opcion elegida
+if operation == 1:
+    result = addition
+elif operation == 2:
+    result = subtraction
+elif operation == 3: 
+    result = multiplication
+elif operation == 4:
+    result = division
+elif operation == 5:
+    result = power
+elif operation == 6:
+    result = integer_division
+elif operation == 7:
+    result = modulus    
+else:
+    print("Invalid operation, please choose a valid option.")
+
 #encabezado de resultados
-print("\nResults:")
+print("\nResult:")
 print("=" * 30)
 
-#imprimir operaciones
-print(f" Addition of {number1} and {number2} is : {addition}")
-print(f" Subtraction of {number1} and {number2} is : {subtraction}")
-print(f" Multiplication of {number1} and {number2} is : {multiplication}")
-print(f" Division of {number1} and {number2} is : {division}")
-print(f" Power of {number1} and {number2} is : {power}")
-print(f" Integer Division of {number1} and {number2} is : {integer_division}")
-print(f" Modulus of {number1} and {number2} is : {modulus}")
+#imprimir resultado
+if operation == 1:
+    print(f" Addition of {number1} and {number2} is : {addition}")
+elif operation == 2:
+    print(f" Subtraction of {number1} and {number2} is : {subtraction}")
+elif operation == 3:
+    print(f" Multiplication of {number1} and {number2} is : {multiplication}")
+elif operation == 4:
+    print(f" Division of {number1} and {number2} is : {division}")
+elif operation == 5:
+    print(f" Power of {number1} and {number2} is : {power}")
+elif operation == 6:
+    print(f" Integer Division of {number1} and {number2} is : {integer_division}")
+elif operation == 7:
+    print(f" Modulus of {number1} and {number2} is : {modulus}")
