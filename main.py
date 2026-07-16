@@ -19,7 +19,7 @@ print("6. integer division")
 print("7. modulus")
 
 #preguntar al usuario que operacion desea realizar
-operation = float(input("Enter the number of the operation: "))
+operation = int(input("Enter the number of the operation: "))
 
 #preguntar 2 numeros
 number1 = float(input ("Enter the first number :"))
@@ -50,24 +50,6 @@ elif operation == 6:
 elif operation == 7:
     result = modulus    
 else:
-    print("Invalid operation, please choose a valid option.")
+    result = "Invalid operation"
+print(f" The result of the operation is: {result}")
 
-#encabezado de resultados
-print("\nResult:")
-print("=" * 30)
-
-#imprimir resultado
-if operation == 1:
-    print(f" Addition of {number1} and {number2} is : {addition}")
-elif operation == 2:
-    print(f" Subtraction of {number1} and {number2} is : {subtraction}")
-elif operation == 3:
-    print(f" Multiplication of {number1} and {number2} is : {multiplication}")
-elif operation == 4:
-    print(f" Division of {number1} and {number2} is : {division}")
-elif operation == 5:
-    print(f" Power of {number1} and {number2} is : {power}")
-elif operation == 6:
-    print(f" Integer Division of {number1} and {number2} is : {integer_division}")
-elif operation == 7:
-    print(f" Modulus of {number1} and {number2} is : {modulus}")
